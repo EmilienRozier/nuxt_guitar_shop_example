@@ -23,3 +23,17 @@ a {
     font-weight: 500;
     transition: 0.2s;
 }
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+}

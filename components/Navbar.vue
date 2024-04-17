@@ -23,5 +23,13 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-</script>
+
+<style scoped>
+a {
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: dimgray;
+}
+</style>

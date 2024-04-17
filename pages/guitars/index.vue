@@ -1,5 +1,16 @@
 <template>
   <div>
-    <guitars-card id="1" titre="PRO-MOD DK24 HH 2PT EB" details="2962411303 / GLOSS BLACK" img="/img/guitars/pro-mod/pro-mod-1.png"/>
+    <guitars-wrapper>
+      <guitars-card v-for="g in guitars.data" :key="g.id" :id="g.id" :titre="g.name" details="" :img="g.img"/>
+    </guitars-wrapper>
   </div>
 </template>
+
+<script setup lang="ts">
+let client = useSupabaseClient()
+
+let { data: guitars } = await useAsyncData('guitars', async () => client.from('guitars').select('*'))
+
+console.log(guitars.value)
+
+</script>

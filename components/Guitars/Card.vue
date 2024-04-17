@@ -1,8 +1,8 @@
 <template>
   <NuxtLink :to="'/guitars/' + id" class="flex w-[300px] min-w-[300px] m-5 justify-self-center">
-    <div class="relative flex flex-col w-full overflow-hidden bg-gray-300 rounded-md transition hover:scale-105">
-      <div class="h-[300px] -rotate-90 relative flex items-center">
-        <img :src="img" class="absolute left-0 w-[200%] p-5">
+    <div class="relative flex flex-col w-full overflow-hidden rounded-md transition bg-gray-300 hover:scale-105 hover:drop-shadow-sm">
+      <div class="h-[300px] relative flex items-center overflow-hidden">
+        <img :src="img" class="absolute left-0 w-full p-5 h-full object-contain">
       </div>
       <div class="bg-gray-100 p-5">
         <h4><b>{{ titre }}</b></h4>

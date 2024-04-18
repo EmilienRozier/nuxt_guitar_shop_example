@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <div>
+  <div class="min-h-screen">
     <NuxtPage/>
   </div>
   <Footer/>

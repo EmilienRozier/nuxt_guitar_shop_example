@@ -4,9 +4,9 @@
       <div class="h-[300px] relative flex items-center overflow-hidden">
         <img :src="img" class="absolute left-0 w-full p-5 h-full object-contain">
       </div>
-      <div class="bg-gray-100 p-5">
+      <div class="bg-gray-100 p-5 flex h-full max-h-24">
         <h4><b>{{ titre }}</b></h4>
-        <h4>{{ details }}</h4>
+<!--        <h4>{{ details }}</h4>-->
       </div>
     </div>
   </NuxtLink>
@@ -19,7 +19,7 @@
 defineProps<{
   img?: string
   titre?: string
-  details?: string
+  // details?: string
   id?: number
 }>()
 </script>
